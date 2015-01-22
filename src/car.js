@@ -46,7 +46,7 @@ Car.prototype.dropOff = function(name) {
 if (this.state === "on") {
 	if((this.passengers.indexOf(name) != -1)){
 	x = this.passengers.indexOf(name);
-	}this.passengers.splice(x);
+	}this.passengers.splice(x,1);
 };
 }
 module.exports=Car;
